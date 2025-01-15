@@ -5,16 +5,17 @@ echo *--------- STOP FOOD-ORDER INFRASTRUCTURE ----------*
 echo *---------------------------------------------------*
 echo.
 
-
+echo docker stop $(docker ps -a -q)
 for /f "tokens=*" %%i in ('docker ps -a -q') do (
     docker stop %%i
 )
 
-
+echo docker container prune -f
 docker container prune -f
 
+echo docker network prune -f
 docker network prune -f
 
 echo.
-echo Operação concluída.
+echo Operação concluida.
 pause
