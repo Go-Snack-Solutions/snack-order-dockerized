@@ -1,7 +1,7 @@
 @echo off
 echo.
 echo *---------------------------------------------------*
-echo *--------- STOP FOOD-ORDER INFRASTRUCTURE ----------*
+echo *--------- STOP SNACK-ORDER INFRASTRUCTURE ----------*
 echo *---------------------------------------------------*
 echo.
 
