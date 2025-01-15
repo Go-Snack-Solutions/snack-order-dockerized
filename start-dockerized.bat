@@ -21,11 +21,11 @@ set /p INITIALIZATION_TYPE="Digite sua escolha (1, 2 ou 3): "
 
 if "%INITIALIZATION_TYPE%" == "1" (
     echo Inicializando os recursos...
-    call "script-bash\start-local-snack-order-infrastructures.bat"
+    call "script-bat\start-local-snack-order-infrastructures.bat
     goto end
 ) else if "%INITIALIZATION_TYPE%" == "2" (
     echo Finalizando os containers...
-    call "script-bash\stop-local-snack-order-infrastructures.bat"
+    call "script-bat\stop-local-snack-order-infrastructures.bat"
     goto end
 ) else if "%INITIALIZATION_TYPE%" == "3" (
     echo Encerrando execucao!
