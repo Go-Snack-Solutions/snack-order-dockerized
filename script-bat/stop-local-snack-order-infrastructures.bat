@@ -6,7 +6,10 @@ echo *---------------------------------------------------*
 echo.
 
 
-docker stop $(docker ps -a -q)
+for /f "tokens=*" %%i in ('docker ps -a -q') do (
+    docker stop %%i
+)
+
 
 docker container prune -f
 
