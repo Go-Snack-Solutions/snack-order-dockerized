@@ -6,6 +6,10 @@ SNACK_ORDER_POSTGRES="./compose/default-resources/docker-compose-postgres-db.yml
 SNACK_ORDER_KAFKA="./compose/default-resources/docker-compose-kafka.yml"
 SNACK_ORDER_PROMETHEUS="./compose/default-resourcers/docker-compose-prometheus.yml"
 
+
+
+
+
 echo
 echo "*---------------------------------------------------*"
 echo "*--------- START FOOD-ORDER INFRASTRUCTURE ---------*"
