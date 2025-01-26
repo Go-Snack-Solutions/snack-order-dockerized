@@ -9,7 +9,7 @@ export NEWT_COLORS='
 
 PROMPT_COMMAND='red'
 
-INITIALIZATION_TYPE=$(whiptail --title "SEJA BEM VINDO AO FOOD ORDER DOCKERIZED" --menu "Deseja inicializar os containers?:" 18 80 10 \
+INITIALIZATION_TYPE=$(whiptail --title "SEJA BEM VINDO AO SNACK ORDER DOCKERIZED" --menu "Deseja inicializar os containers?:" 18 80 10 \
       "START" "Inicializa os recursos das aplicações food-order"        \
       "STOP" "Finaliza os containers" \
        3>&1 1>&2 2>&3

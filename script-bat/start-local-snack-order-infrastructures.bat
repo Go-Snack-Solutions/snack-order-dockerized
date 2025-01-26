@@ -1,7 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
 
-set SNACK_ORDER_POSTGRES=.\compose\default-resources\docker-compose-postgres-db.yaml
+set SNACK_ORDER_POSTGRES=.\compose\default-resources\docker-compose-postgres-db.yml
 
 echo.
 echo *---------------------------------------------------*

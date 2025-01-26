@@ -1,0 +1,36 @@
+
+services:
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    volumes: 
+      - "./prometheus.yml:/Users/jonatascarvalho/Documents/Projects/DockerVolumes/prometheus/prometheus.yml"
+    ports:
+      - 9090:9090
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - ./grafana:/etc/grafana/provisioning/datasources
+
+
+
+  # //biblioteca do spring que coleta métricas
+	# implementation("org.springframework.boot:spring-boot-starter-actuator:3.2.4")
+	# //biblioteca para exportação de métricas
+	# implementation("io.micrometer:micrometer-registry-prometheus:1.12.4")
+
+
+  # management:
+  # endpoints:
+  #   web:
+  #     exposure:
+  #       include:
+  #         - prometheus
