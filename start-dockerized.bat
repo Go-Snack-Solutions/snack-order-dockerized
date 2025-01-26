@@ -7,7 +7,7 @@ cls
 
 echo.
 echo    ========================================
-echo           SEJA BEM-VINDO AO FOOD ORDER DOCKERIZED
+echo           SEJA BEM-VINDO AO SNACK ORDER DOCKERIZED
 echo    ========================================
 echo.
 echo    Deseja inicializar os containers?
