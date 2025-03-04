@@ -4,9 +4,46 @@
 		"name": "Snack-Order",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "7422140",
-		"_collection_link": "https://squadworkspace.postman.co/workspace/SNACK-ORDER~23d3887c-e656-4e02-922e-09600a0f1857/collection/7422140-787e0be6-a03e-4d6a-b418-2b375263fabd?action=share&source=collection_link&creator=7422140"
+		"_collection_link": "https://squadworkspace.postman.co/workspace/Go-Snack~23d3887c-e656-4e02-922e-09600a0f1857/collection/7422140-787e0be6-a03e-4d6a-b418-2b375263fabd?action=share&source=collection_link&creator=7422140"
 	},
 	"item": [
+		{
+			"name": "Resgatando todos os pedidos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/snack-order",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"snack-order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Resgatar - pedidos por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/snack-order/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"snack-order",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
 		{
 			"name": "Criando pedido",
 			"request": {
@@ -35,10 +72,19 @@
 			"response": []
 		},
 		{
-			"name": "Resgatando todos os pedidos",
+			"name": "Atualizar Pedido",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"items\" :[\n        {\n        \"item_name\": \"BATATA FRITA\",\n        \"item_price\": 12.00\n        },\n         {\n        \"item_name\": \"SUNDAE DE COCO\",\n        \"item_price\": 7.00\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "localhost:8080/snack-order",
 					"host": [
@@ -66,25 +112,6 @@
 					"path": [
 						"snack-order",
 						"2"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Restatar - pedidos por id ",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/snack-order/3",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"snack-order",
-						"3"
 					]
 				}
 			},
